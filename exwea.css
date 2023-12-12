@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.h2-text{
+    color: black;
+    font-weight: bolder;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.header{
+    position: relative;
+    color: #f1f1f1;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: oblique;
+}
+.content{
+    position: relative;
+}
+.ptag{
+    float: right;
+}
+.content2{
+    position: relative;
+    margin-left: 25%;
+    color: #f1f1f1;
+    background: rgba(0, 0, 0, 0.5);
+    height: 30%;
+    width: 50%;
+    border-radius: 10%;
+  
+    
+
+}
+.feels_like{
+    margin-left: 90px;
+    align-items: center;
+    
+}
+
+.container{
+     width: 400px; 
+    height: min-content;
+    background-color: white;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    background-color: beige;
+    padding: 12px 16px;
+    border-radius: 14px;
+
+}
+
+.search-box input ::placeholder{
+    color:#ababab;
+}
+
+.search-box button{
+    width: 46px;
+    height: 46px;
+    background-color:beige;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-box button:hover{
+    color: white;
+    background-color: crimson;
+}
+.country{
+    color: #f1f1f1;
+}
+.timezone{
+    color: aliceblue;
+}
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    width: 50%;
+    /* margin: 25%; */
+  
+    
+}
+
+.weather-body img{
+    width: 40%;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather-box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.weather-box .description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.weather-detail{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+
+.humidity{
+    margin-left: 20px;
+}
+
+.wind{
+    margin-right: 20px;
+}
+
+.weather-detail i{
+    font-size: 36px;
+}
+
+.weather-detail .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location-not-found h1{
+    font-size: 20px;
+    color:aliceblue;
+    margin-block-end: 15px;
+}
+.location-not-found img{
+    width: 50%;
+}
+@media (min-width:320px) and (max-width:768px){
+    #myVideo{
+        /* width: 100%; */
+        height: 500px;
+    }
+    .search-box input{
+        width: 500px;
+        margin-left: -40px;
+    }
+    .search-box button{
+        width: 170px;
+        margin-left:4%;
+        height: 30px;
+    }
+    
+    .weather-detail{
+        font-size: 12px;
+    }
+    .weather-detail .text{
+        font-size: 17px;
+        margin-right: 90px;
+    }
+    .weather-body{
+        height: 200px;
+       
+    }
+   .weather-detail  {
+    
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: -50px;
+
+   }
+   .Whether-img{
+    margin-top: 500px;
+   }
+   .content2{
+    background: none;
+   }
+    
+}
